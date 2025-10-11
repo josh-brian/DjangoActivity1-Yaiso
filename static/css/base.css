@@ -1,0 +1,74 @@
+/* Reset and defaults */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EBCB90; /* warm gold */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center; /* ✅ ensures vertical centering of text and logo */
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.brand {
+    color: #3b3b3b; /* darker contrast text */
+    font-weight: bold;
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+/* Navigation links */
+.navbar-right a {
+    color: #3b3b3b;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-right a:hover {
+    color: #8b6b34; /* subtle brown-gold hover tone */
+}
+
+/* Page background */
+body {
+    background-color: #FAF8F1; /* soft light background */
+}
+
+/* Home content */
+.container {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4aclf7; /* you can change this if you want a more pastel tone */
+}
+
+/* Optional: Give content area subtle styling */
+main, .container {
+    background-color: white;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
+}

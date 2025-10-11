@@ -1,0 +1,13 @@
+{% load static %}
+
+
+<header class="navbar">
+    <div class="navbar-left">
+        <img src="{% static 'images/brian_logo.png' %}" alt="Logo" class="logo">
+        <span class="brand">ProjectYaiso</span>
+    </div>
+    <nav class="navbar-right">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+</header>
