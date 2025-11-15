@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+        <div class="container" >
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.body}}</p>
+
+            <div class="actions-wrapper">
+                <a class="action" href="{% url 'blog_update' object.pk %}">Edit Blog</a>
+                <a class="action" href="{% url 'blog_delete' object.pk %}">Delete Blog</a>
+            </div>
+        </div>
+{% endblock content %}

@@ -1,4 +1,4 @@
-/* Reset and defaults */
+
 * {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Navbar styling */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -18,7 +18,7 @@
 
 .navbar-left {
     display: flex;
-    align-items: center; /* ✅ ensures vertical centering of text and logo */
+    align-items: center;
 }
 
 .logo {
@@ -28,7 +28,7 @@
 }
 
 .brand {
-    color: #3b3b3b; /* darker contrast text */
+    color: #3b3b3b;
     font-weight: bold;
     font-size: 1.3em;
     vertical-align: middle;
@@ -53,18 +53,39 @@ body {
     background-color: #FAF8F1; /* soft light background */
 }
 
-/* Home content */
+/* content */
 .container {
-    padding: 60px 20px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
     text-align: center;
 }
 
-h1 {
-    color: #4aclf7; /* you can change this if you want a more pastel tone */
+.actions-wrapper {
+    text-align: left;
+    margin-top: 10px;
 }
 
-/* Optional: Give content area subtle styling */
-main, .container {
+    .actions-wrapper .action {
+        margin-right: 5px;
+        display: inline-block;
+        background-color: #e6e6e6; /* light gray */
+        color: #3b3b3b;
+        text-decoration: none;
+        font-size: 0.85rem;   /* smaller font */
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+    }
+
+    .actions-wrapper .action:hover {
+        background-color: #EBCB90;
+    }
+
+.form {
     background-color: white;
     margin: 40px auto;
     padding: 30px;
@@ -72,3 +93,53 @@ main, .container {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     max-width: 800px;
 }
+
+    .form h1{
+        text-align: center;
+    }
+
+h1 {
+    color: #4aclf7;
+}
+
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .btn {
+        background-color: #e6e6e6; /* light gray */
+        color: #3b3b3b;
+        font-size: 0.85rem;
+        padding: 6px 14px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn:hover {
+        background-color: #EBCB90;
+    }
+
+.new-wrapper {
+    text-align: left;
+    margin: 20px 20px;
+}
+
+    .new-wrapper .new {
+        display: inline-block;
+        background-color: #e6e6e6; /* light gray */
+        color: #3b3b3b;
+        text-decoration: none;
+        font-size: 0.85rem;   /* smaller font */
+        padding: 6px 12px;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+    }
+
+    .new-wrapper .new:hover {
+        background-color: #EBCB90;
+    }
+
